@@ -1,0 +1,75 @@
+name: "Is-that-a-clue"
+author: "Orange"
+category: crypto
+description: |-
+  Voici un des challenges d'entrée dans la résistance, prouve nous ta valeur.
+  Déchiffre un QR code avec un encodage en base58 et une chaine de caractèe elle-même encodée, 
+  à la place de l'encodage très connu en base64. Cette chaine de caractère est encodée dans un
+  langage esoteric : pikalang (le préféré du boss).
+  
+  Le flag a le format suivant : `FMCTF{xxx}` (xxx étant la chaîne décodée)
+
+attribution: 'Orange'
+
+connection_info:
+
+value: 500
+type: dynamic
+state: visible
+
+extra:
+    initial: 500
+    decay: 50
+    minimum: 100
+
+    # Pour les challenge à la demande uniquement
+    # À remplir par un sysadmin
+    # template_name: exemple-tcp 
+
+# Pour les challenge communs uniquement
+# À remplir par un sysadmin
+
+hints:
+    - {
+        title: "Premier pas",
+        content: '[Cyberchef](https://gchq.github.io/CyberChef/)',
+        cost: 10
+    }
+
+    - {
+        title: "Un dernier effort",
+        content: '[DCode.fr](https://www.dcode.fr/) supports esoteric languages.',
+        cost: 20
+    }
+
+flags:
+    - FMCTF{Boss_fav_pokemon}
+# Les topics ne sont visibles que par les admins
+topics:
+    - Cryptographie
+    - Pikalang
+    - Base58
+    - "Adaptation : NatlamPyEnjoyer"
+
+# Les tags sont visisbles par les joueurs et peuvent donner une idée du thème du challenge
+# Il doit y avoir au moins un tag annoncant la difficulté (Très Facile/Facile/Moyen/Difficile/Très Difficile)
+tags:
+    - Facile
+    - crypto
+  
+#Liste des fichiers à fournirs aux joueurs
+files:
+    - files/ClueQRc.png
+
+# Requirements are used to make a challenge require another challenge to be
+# solved before being available.
+# Can be removed if unused
+# Accepts challenge names as strings or challenge IDs as integers
+# requirements:
+#    - "Warmup"
+#    - "Are you alive"
+
+# The state of the challenge.
+# If the field is omitted, the challenge is visible by default.
+# If provided, the field can take one of two values: hidden, visible.
+version: "0.1"

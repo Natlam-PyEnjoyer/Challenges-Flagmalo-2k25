@@ -1,0 +1,75 @@
+name: "Glitched_Hymn_of_the_Neon_Dawn"
+author: "Natlam-PyEnjoyer"
+category: autres
+description: |-
+  Nous avons trouvé un point d'entrée dans le système de l'ennemi (à revoir avec le LORE) mais, il faut CHANTER ? 
+  Bien que nous ayons mis toute une équipe sur le projet, rien n'y fais. 
+  Tu es notre dernier espoir pour espérer pouvoir utiliser cette faille avant qu'ils ne la bouchent.
+
+  Format attendu du flag : `FMCTF{}`
+
+  Auteur : [Natlam-PyEnjoyer](https://github.com/theo330)
+
+
+attribution: 'Auteur : [Natlam-PyEnjoyer](https://github.com/Natlam-PyEnjoyer)'
+
+connection_info: "(à mettre quand le docker tournera)" 
+
+value: 500
+type: dynamic
+state: visible
+
+extra:
+    template_name: Glitched_Hymn_of_the_Neon_Dawn
+    initial: 500
+    decay: 50
+    minimum: 100
+
+    # Pour les challenge à la demande uniquement
+    # À remplir par un sysadmin
+    # template_name: exemple-tcp 
+
+# Pour les challenge communs uniquement
+# À remplir par un sysadmin
+
+hints:
+    - {
+        title: "Bamboozled ?",
+        content: "En étudiant le code grâce au fichier python fourni, tu trouveras sans doute comment donner le 'la' et récupérer ce que tu cherches.",
+        cost: 10
+    }
+    - {
+        title: "Still here ?",
+        content: "Dans le code tu vois 'import regex', intéresse toi aux regex pour que le code fasse ce que tu veux.",
+        cost: 15
+    }
+
+flags:
+    - FMCTF{Neon_Regex_Overdrive_fa0345ed44}
+# Les topics ne sont visibles que par les admins
+topics:
+    - Python
+    - Regex
+
+# Les tags sont visisbles par les joueurs et peuvent donner une idée du thème du challenge
+# Il doit y avoir au moins un tag annoncant la difficulté (Très Facile/Facile/Moyen/Difficile/Très Difficile)
+tags:
+    - Facile
+    - autres
+  
+#Liste des fichiers à fournirs aux joueurs
+files:
+    - files/hymn-neon.py
+
+# Requirements are used to make a challenge require another challenge to be
+# solved before being available.
+# Can be removed if unused
+# Accepts challenge names as strings or challenge IDs as integers
+# requirements:
+#    - "Warmup"
+#    - "Are you alive"
+
+# The state of the challenge.
+# If the field is omitted, the challenge is visible by default.
+# If provided, the field can take one of two values: hidden, visible.
+version: "0.1"

@@ -1,0 +1,75 @@
+name: "Qui-est-ce"
+author: "Natlam-PyEnjoyer"
+category: crypto
+description: |-
+  Nous avons récupéré un contrat contenant des preuves de commerce d’eau illicite. Cependant, nous n'avons aucune information sur les acteurs.
+  Lors de la connexion sur un site web d'un des suspects, la connexion a été coupée, tout ce que nous avons pour identifier cet individu est la fin de l'entête "Authorization" issu de sa requête web.
+  Nous avons besoin de vous pour retrouver l'identité de ce suspect.
+
+  Format attendu du flag : `FMCTF{xxx}` (avec xxx la partie de la chaine décodée recherchée)
+
+  Chaine de caractère récupérée : Y3J5cHRleF9kZWx0YV9taXJhZ2VfVjptZHBfc2VjdXJlZA==
+
+  Auteur : [Natlam-PyEnjoyer](https://github.com/Natlam-PyEnjoyer)
+
+
+attribution: 'Auteur : [Natlam-PyEnjoyer](https://github.com/Natlam-PyEnjoyer)'
+
+#connection_info: "https://chall.mooo.com:8001"
+
+value: 500
+type: dynamic
+state: visible
+
+extra:
+    initial: 500
+    decay: 50
+    minimum: 100
+
+    # Pour les challenge à la demande uniquement
+    # À remplir par un sysadmin
+    # template_name: exemple-tcp 
+
+# Pour les challenge communs uniquement
+# À remplir par un sysadmin
+
+hints:
+    - {
+        title: "Dans le brouillard ?",
+        content: "Faire une recherche web sur l'entête Authorization",
+        cost: 10
+    }
+    - {
+        title: "T'as toujours pas trouvé la lumière ?",
+        content: "Intéresse-toi au Basic",
+        cost: 20
+    }
+flags:
+    - FMCTF{cryptex_delta_mirage_V}
+# Les topics ne sont visibles que par les admins
+topics:
+    - Basic
+    - Base 64
+    - Encodage
+
+# Les tags sont visisbles par les joueurs et peuvent donner une idée du thème du challenge
+# Il doit y avoir au moins un tag annoncant la difficulté (Très Facile/Facile/Moyen/Difficile/Très Difficile)
+tags:
+    - Intro
+    - crypto
+  
+# Liste des fichiers à fournirs aux joueurs
+#files:
+
+# Requirements are used to make a challenge require another challenge to be
+# solved before being available.
+# Can be removed if unused
+# Accepts challenge names as strings or challenge IDs as integers
+# requirements:
+#    - "Warmup"
+#    - "Are you alive"
+
+# The state of the challenge.
+# If the field is omitted, the challenge is visible by default.
+# If provided, the field can take one of two values: hidden, visible.
+version: "0.1"

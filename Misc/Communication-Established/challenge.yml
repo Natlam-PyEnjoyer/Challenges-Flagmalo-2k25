@@ -1,0 +1,73 @@
+name: "Communication-Established"
+author: "Natlam-PyEnjoyer"
+category: Misc
+description: |-
+  Nous avons trouvé un système étrange qui sert à la communication pour l'ennemie
+  Un système dont le nom est le même qu'un célèbre guerrier gaulois. Nous avons besoin
+  de ton aide pour pouvoir enregistré un de nos équipement pour pouvoir intéragir avec leur
+  système de communication.
+  Ton objectif : T'enregistrer sur le serveur de communication ennemi avec le softphone de ton choix.
+  Pour récupérer l'information dont nous avons besoin, appelle le numéro 666666
+
+  Format attendu du flag : `FMCTF{}` (mots et/ou nombres séparés par des underscores : **_** et les mots sont en minuscule)
+
+  Précisions : 
+  - Pour ce chall, vous aurez besoin d'un softphone (que vous soyez en présentiel ou en distanciel).
+  - Windows : Zoiper ou MicroSIP; Linux : Zoiper ou Twinkle; Mac : Zoiper (Juste des propositions, si vous en avez d'autres, utilisez les, pas de problèmes).
+  - La téléphonie a du mal avec le NAT donc soit vous mettez votre Softphone sur une VM en accès par pont (uniqument possible pour les personnes en présentielles) ou vous avez votre softphone sur votre machine physique (possible pour les personnes en présentiel et en distanciel).
+  - Le son est utile pour les challs suivants de téléphonie, il sera sans doute de meilleure qualité sur votre machine physique que sur une VM.
+  - Les informations de connexion (numéro attribué et mot de passe) ont été envoyées sur Discord
+  - Vous pouvez être plusieurs enregistrés avec le même numéro et le même mot de passe (chaque groupe a un compte et chaque personne du groupe peut s'enregistrer, si vous avez envie)
+
+  Auteur : [Natlam-PyEnjoyer](https://github.com/Natlam-PyEnjoyer)
+
+
+attribution: 'Auteur : [Natlam-PyEnjoyer](https://github.com/Natlam-PyEnjoyer)'
+
+connection_info:
+
+value: 500
+type: dynamic
+state: visible
+
+extra:
+    initial: 500
+    decay: 50
+    minimum: 100
+
+    # Pour les challenge à la demande uniquement
+    # À remplir par un sysadmin
+    # template_name: exemple-tcp 
+
+# Pour les challenge communs uniquement
+# À remplir par un sysadmin
+
+hints:
+
+flags:
+    - FMCTF{votre_correspondant_est_actuellement_injoignable_18654}
+# Les topics ne sont visibles que par les admins
+topics:
+    - Téléphonie
+    - Agi
+    - Lore
+
+# Les tags sont visisbles par les joueurs et peuvent donner une idée du thème du challenge
+# Il doit y avoir au moins un tag annoncant la difficulté (Très Facile/Facile/Moyen/Difficile/Très Difficile)
+tags:
+    - Intro
+    - Misc
+  
+#Liste des fichiers à fournirs aux joueurs
+
+# Requirements are used to make a challenge require another challenge to be
+# solved before being available.
+# Can be removed if unused
+# Accepts challenge names as strings or challenge IDs as integers
+# requirements:
+#   - "Communication-Established"
+
+# The state of the challenge.
+# If the field is omitted, the challenge is visible by default.
+# If provided, the field can take one of two values: hidden, visible.
+version: "0.1"

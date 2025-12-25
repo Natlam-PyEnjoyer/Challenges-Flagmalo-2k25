@@ -1,0 +1,19 @@
+FROM eclipse-temurin:21-jdk-jammy
+
+# Installer socat
+RUN apt-get update && apt-get install -y socat && rm -rf /var/lib/apt/lists/*
+
+# Répertoire de travail
+WORKDIR /usr/src/app
+
+# Copier les sources
+COPY . .
+
+# Compiler le programme Java
+RUN javac PunkRev.java
+
+# Exposer le port
+EXPOSE 9000
+
+# Lancer le programme via socat
+CMD socat TCP-LISTEN:9001,reuseaddr,fork EXEC:"java PunkRev",pty,stderr

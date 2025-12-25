@@ -1,0 +1,79 @@
+name: "PunkRev"
+author: "Natlam-PyEnjoyer"
+category: autres
+description: |-
+  Pour accéder aux données de l'ennemi (à revoir avec le LORE) nous devons passer une sécurité.
+  Tous nos essais ont été infructueux. Sauras-tu défaire cet algorithme ?
+
+  Format attendu du flag : `FMCTF{}`
+
+  Auteur : [Natlam-PyEnjoyer](https://github.com/Natlam-PyEnjoyer)
+
+
+attribution: 'Auteur : [Natlam-PyEnjoyer](https://github.com/Natlam-PyEnjoyer)'
+
+connection_info: "https://chall.mooo.com:8001 (à mettre quand le docker tournera)" 
+
+value: 500
+type: dynamic
+state: visible
+
+extra:
+    template_name: PunkRev
+    initial: 500
+    decay: 50
+    minimum: 100
+
+    # Pour les challenge à la demande uniquement
+    # À remplir par un sysadmin
+    # template_name: exemple-tcp 
+
+# Pour les challenge communs uniquement
+# À remplir par un sysadmin
+
+hints:
+    - {
+        title: "Archeblocked ?",
+        content: "Rassemble chaque bout du code pour comprendre la logique globale.",
+        cost: 10
+    }
+
+    - {
+        title: "Corpostuck ?",
+        content: "Utilise un autre langage ou le même pour faire les opérations inverses",
+        cost: 15
+    }
+
+flags:
+    - FMCTF{Try_Rev_eFbDa}
+# Les topics ne sont visibles que par les admins
+topics:
+    - Java
+    - Interface
+    - Héritage
+
+# Les tags sont visisbles par les joueurs et peuvent donner une idée du thème du challenge
+# Il doit y avoir au moins un tag annoncant la difficulté (Très Facile/Facile/Moyen/Difficile/Très Difficile)
+tags:
+    - Facile
+    - autres
+  
+#Liste des fichiers à fournirs aux joueurs
+files:
+    - files/aintNoGimletEye.java
+    - files/noTraumaTeam.java
+    - files/wayToProspecta.java
+    - files/PunkRev.java
+
+# Requirements are used to make a challenge require another challenge to be
+# solved before being available.
+# Can be removed if unused
+# Accepts challenge names as strings or challenge IDs as integers
+# requirements:
+#    - "Warmup"
+#    - "Are you alive"
+
+# The state of the challenge.
+# If the field is omitted, the challenge is visible by default.
+# If provided, the field can take one of two values: hidden, visible.
+version: "0.1"

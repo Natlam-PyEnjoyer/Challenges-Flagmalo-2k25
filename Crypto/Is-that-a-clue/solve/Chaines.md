@@ -1,0 +1,9 @@
+### Chaine en Pikalang : 
+`
+pi pi pi pi pi pi pi pi pi pi pika pipi pi pipi pi pi pi pipi pi pi pi pi pi pi pi pipi pi pi pi pi pi pi pi pi pi pi pichu pichu pichu pichu ka chu pipi pipi pipi ka ka ka ka pikachu pipi pi pi pi pi pi pi pi pi pi pi pi pikachu pi pi pi pi pikachu pikachu ka ka ka ka ka ka ka ka ka ka ka ka ka ka ka ka ka ka ka ka pikachu pi pi pi pi pi pi pi pikachu ka ka ka ka ka pikachu pi pi pi pi pi pi pi pi pi pi pi pi pi pi pi pi pi pi pi pi pi pikachu ka ka ka ka ka ka ka ka ka ka ka ka ka ka ka ka ka ka ka ka ka ka ka pikachu pi pi pi pi pi pi pi pi pi pi pi pi pi pi pi pi pi pikachu ka pikachu ka ka ka ka pikachu ka ka ka ka ka ka pikachu pi pi pi pi pi pi pi pi pikachu pi pi pikachu ka pikachu
+`
+
+### Chaine en Base58 : 
+`
+27f65YZxMDHB4QWby2JnAjzrLgqXKka5c4PCyEWXPFgRfy1pEBmDe8jd8NaQDppEUbYU6Ykrdu3yByaCi7YWydsg1Vse7nW2EUuqDdrE9cnHzUp3P1DunivyC2enVuaDvEPjkiPBygEtLMCwjsi1LvtuzFMwZn8b2yG2vcSvhcjPkKjSSunyYRUdwYz8AHu39cTdRDXm6bvuVXNpD3vvm8Ezo1i5oTj5PVTynLp76uiWc55TgyJawqTcYpZ7UnXxGd2H3AubqfYEA4JuEh1PDAQ3aVcYRGfCrw972EmYdsYgUz5cgQP3hwEcYuYAyWTHtQCP2T2eEGshurcgE3VuPMgdMHY1D5DtaoPHPgDPNKBejRNaZtBz1bL3DnAkY6pgu2VG7UtDskuLv85PJYme34EsbrzCcjUH7S2M5Nkd6oCXUWD6XjejbjUngigL8MPVnj2UYWYMxB94kepDJEQKdpgKL9h3vuddZ3nVxVaGLL6JKgksUvWtPtQhcR17p6T2JDr25smywrmmGKYmQLxNq2KPGTWuyqp3MEWW26E3Gn3yiCEUPWhwdwKjottMgnerYnJgNrP9nx5hTgFCndtbkif4596bAum4pRaNSofYqwDwrQL9XLZzoAxzEKpnrPjULmifzvGrNdSrdAPFLn9JZ32NuwEDVQZV8NJqv6kmrfh5tVatVYggo67cNFbqm6grLHGkRU7CcYv55XoFHqCXSKyzYKpYMxaBkE5JmSLATMvpBxLZFVxpYuUfiEsnt2equu9i2N5NcA2firt8jeEtF1dbbkVRRyAxkuXe2JsCmQtLcJZw8ukufbWHPMLDVHnBb4ivpitiMMYYPrPzgvHLzAzcmv6SvFpvRHgjNNkc5GW2rmpZ4ADUTc3VZvhPu51oc2RZy7Fs7eTyU5TWBxiDGCkFBVybrPDSMsKH8Uh3ivcqQbNqDHXPaicWAp
+`

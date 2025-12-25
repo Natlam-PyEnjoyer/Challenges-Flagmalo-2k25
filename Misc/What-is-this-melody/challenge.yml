@@ -1,0 +1,66 @@
+name: "What-is-this-melody"
+author: "Natlam-PyEnjoyer | ChickenMan"
+category: Misc
+description: |-
+  Nous avons trouvé un système étrange qui sert à la communication pour l'ennemie
+  Un système dont le nom est le même qu'un célèbre guerrier gaulois. Nous sommes tombés
+  par hasard sur un numéro vraiment étrange. Une musique y est jouée en boucle. 
+  Nous sommes sûr qu'elle est reliée à un mécanisme plus profond mais nous n'arrivons
+  pas à mettre le doigt dessus. Pourras-tu nous éclairer pour résoudre ce mystère ?
+
+  Pour joindre cet étrange numéro, appelle le numéro que compose un certain `Gérard Bouchard`
+
+  Format attendu du flag : `FMCTF{}` (mots et/ou nombres séparés par des underscores : **_** et les mots sont en minuscule)
+
+  Auteur : [Natlam-PyEnjoyer](https://github.com/Natlam-PyEnjoyer)
+
+
+attribution: 'Auteur : [Natlam-PyEnjoyer](https://github.com/Natlam-PyEnjoyer)'
+
+connection_info:
+
+value: 500
+type: dynamic
+state: visible
+
+extra:
+    initial: 500
+    decay: 25
+    minimum: 200
+
+    # Pour les challenge à la demande uniquement
+    # À remplir par un sysadmin
+    # template_name: exemple-tcp 
+
+# Pour les challenge communs uniquement
+# À remplir par un sysadmin
+
+hints:
+
+flags:
+    - FMCTF{gerard_bouchard_compose_le_0869696969}
+# Les topics ne sont visibles que par les admins
+topics:
+    - Téléphonie
+    - Wireshark
+    - Lore
+
+# Les tags sont visisbles par les joueurs et peuvent donner une idée du thème du challenge
+# Il doit y avoir au moins un tag annoncant la difficulté (Très Facile/Facile/Moyen/Difficile/Très Difficile)
+tags:
+    - Moyen
+    - Misc
+  
+#Liste des fichiers à fournirs aux joueurs
+
+# Requirements are used to make a challenge require another challenge to be
+# solved before being available.
+# Can be removed if unused
+# Accepts challenge names as strings or challenge IDs as integers
+# requirements:
+#   - "Communication-Established"
+
+# The state of the challenge.
+# If the field is omitted, the challenge is visible by default.
+# If provided, the field can take one of two values: hidden, visible.
+version: "0.1"
