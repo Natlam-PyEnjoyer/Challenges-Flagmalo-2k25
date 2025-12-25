@@ -1,6 +1,6 @@
 # Flag'Malo 2025
 
-## Challenges Natlam-PyEnjoyer | \_ChickenMan__
+## Challenges Natlam-PyEnjoyer
 
 > ### Introduction
 
